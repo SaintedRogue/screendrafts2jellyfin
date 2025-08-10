@@ -1,0 +1,19 @@
+[project]
+name = "screendraft2jellyfin"
+version = "0.1.0"
+description = "Create ranked Jellyfin playlists from ScreenDrafts Fandom episode pages."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Your Name" }]
+dependencies = ["requests>=2.31.0"]
+
+[project.scripts]
+screendraft2jellyfin = "screendraft2jellyfin.cli:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+addopts = "-q"
+pythonpath = ["src"]
